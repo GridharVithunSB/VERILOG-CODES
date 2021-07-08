@@ -36,3 +36,15 @@ always #5 borrowi=~borrowi;
 always #100 b=~b;
 always #200 a=~a;
 endmodule
+
+
+Full Subtractor:
+X Y Bi Bo D 
+0 0 0 0 0
+0 0 1 1 1
+0 1 0 1 1
+0 1 1 1 0
+1 0 0 0 1
+1 0 1 0 0
+1 1 0 0 0
+1 1 1 1 1
