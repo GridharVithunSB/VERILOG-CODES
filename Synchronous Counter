@@ -31,3 +31,22 @@ rst=1;
 rst=0;
 end
 endmodule
+
+PRESENT STATE NEXT STATE JK FLIP FLOP
+Q3 Q2 Q1 Q0 Q3’ Q2’ Q1’ Q0’ J3K3 J2K2 J1K1 J0K0
+0 0 0 0 0 0 0 1 0 X 0 X 0 X 1 X
+0 0 0 1 0 0 1 0 0 X 0 X 1 X X 1
+0 0 1 0 0 0 1 1 0 X 0 X X 0 1 X
+0 0 1 1 0 1 0 0 0 X 1 X X 1 X 1
+0 1` 0 0 0 1 0 1 0 X X 0 0 X 1 X
+0 1 0 1 0 1 1 0 0 X X 0 1 X X 1
+0 1 1 0 0 `1 1 1 0 X X 0 X 0 1 X
+0 1 1 1 1 0 0 0 1 X X 1 X 1 X 1
+1 0 0 0 1 0 0 1 X 0 0 X 0 X 1 X
+1 0 0 1 1 0 1 0 X 0 0 X 0 X X 1
+1 0 1 0 1 0 1 1 X 0 0 X X 1 0 X
+1 0 1 1 1 1 0 0 X 0 0 X X 1 X 1
+1 1 0 0 1 1 0 1 X 0 X 1 0 X 0 X
+1 1 0 1 1 1 1 0 X 0 X 1 0 X X 1
+1 1 1 0 1 1 1 1 X 0 X 0 X 0 1 X
+1 1 1 1 0 0 0 0 X 1 X 1 X 1 X 1
