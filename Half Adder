@@ -12,8 +12,12 @@ module halfadder_gatelevel(
  );
 xor(s,x,y);
 and(c,x,y);
-endmodule4
+endmodule
+
+
 Data Flow Modelling:
+
+
 module halfadder_dataflow(
  input x,
  input y,
