@@ -1,0 +1,69 @@
+HALF ADDER:
+
+
+Gate Level Modelling:
+
+
+module halfadder_gatelevel(
+ input x,
+ input y,
+ output s,
+ output c
+ );
+xor(s,x,y);
+and(c,x,y);
+endmodule4
+Data Flow Modelling:
+module halfadder_dataflow(
+ input x,
+ input y,
+ output s,
+ output c
+ );
+assign s=x^y;
+assign c=x&y;
+endmodule
+
+
+Behavioural Modelling:
+
+module halfadder3_behavioural(
+input x,
+input y,
+output s,
+output c
+);
+reg s;
+reg c;
+always @(x,y)5
+begin
+s =x^y;
+end
+always @(x,y)
+begin
+c =x&y;
+end
+endmodule
+
+Half Adder Testbench:
+
+module halfaddertest;
+reg a;
+reg b;
+wire sum;
+wire carry;
+halfadder_dataflow uut(
+.x(a),
+.y(b),
+.s(sum),
+.c(carry)
+);6
+Initial
+begin
+a=0;
+b=0;
+#1000 $finish;
+end
+always #50 b=~b;
+always #100 a=~a;
+endmodule
